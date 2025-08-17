@@ -1,6 +1,6 @@
-# JhulaCraft - Handcrafted Home Decor Website
+# JhulaCraft - Handcrafted Swings Website
 
-A beautiful, responsive website for JhulaCraft, showcasing handcrafted home decor items with a focus on artisan craftsmanship and quality.
+A handcrafted swing brand showcasing products, craftsmanship, and an elegant user-friendly design.
 
 ## Features
 

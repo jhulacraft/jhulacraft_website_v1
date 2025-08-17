@@ -136,19 +136,49 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 
-    // Add scroll effect to header
+    // Enhanced sticky header implementation
     const header = document.querySelector('.header');
+    const topBar = document.querySelector('.top-bar');
     let lastScrollTop = 0;
+    let headerOffset = 0;
+
+    // Calculate the offset where header should become sticky
+    if (topBar) {
+        headerOffset = topBar.offsetHeight;
+    }
 
     window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollTop > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
+        // Make header sticky when top-bar scrolls out of view
+        if (scrollTop >= headerOffset) {
+            header.style.setProperty('position', 'fixed', 'important');
+            header.style.setProperty('top', '0', 'important');
+            header.style.setProperty('left', '0', 'important');
+            header.style.setProperty('right', '0', 'important');
+            header.style.setProperty('width', '100%', 'important');
+            header.style.setProperty('z-index', '1000', 'important');
+
+            // Add body padding to prevent content jump
+            document.body.style.paddingTop = header.offsetHeight + 'px';
         } else {
-            header.style.background = '#ffffff';
-            header.style.backdropFilter = 'none';
+            header.style.removeProperty('position');
+            header.style.removeProperty('top');
+            header.style.removeProperty('left');
+            header.style.removeProperty('right');
+            header.style.removeProperty('width');
+
+            // Remove body padding
+            document.body.style.paddingTop = '0';
+        }
+
+        // Background effect
+        if (scrollTop > 100) {
+            header.style.setProperty('background', 'rgba(255, 255, 255, 0.95)', 'important');
+            header.style.setProperty('backdrop-filter', 'blur(10px)', 'important');
+        } else {
+            header.style.setProperty('background', '#ffffff', 'important');
+            header.style.setProperty('backdrop-filter', 'none', 'important');
         }
 
         lastScrollTop = scrollTop;

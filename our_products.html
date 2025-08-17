@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - JhulaCraft</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/jc_favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/jc_favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/jc_favicon.png">
+    <link rel="shortcut icon" href="assets/jc_favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span class="order-text">ORDER NOW</span>
+                </div>
+                <div class="top-bar-right">
+                    <span class="phone">
+                        <img src="assets/jc_phone.png" alt="Phone" class="contact-icon">
+                        +91 9157643543
+                    </span>
+                    <div class="separator"></div>
+                    <span class="email">
+                        <img src="assets/jc_mail.png" alt="Email" class="contact-icon">
+                        jhulacraft@gmail.com
+                    </span>
+                    <div class="separator"></div>
+                    <a href="#" class="social-icon youtube">
+                        <img src="assets/jc_youtube.png" alt="YouTube" class="social-icon-img">
+                    </a>
+                    <div class="separator"></div>
+                    <a href="#" class="social-icon instagram">
+                        <img src="assets/jc_insta.png" alt="Instagram" class="social-icon-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/jhulacraftLogo.png" alt="JhulaCraft" class="logo-image">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                        <li><a href="our_products.html" class="nav-link active">Our Products</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="order-btn">ORDER NOW</button>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar -->
+                <aside class="products-sidebar">
+                    <h3 class="sidebar-title">PRODUCTS CATEGORY</h3>
+                    <ul class="category-list">
+                        <li><a href="#" class="category-link">Acrylic Swing</a></li>
+                        <li><a href="#" class="category-link">Carving Swing</a></li>
+                        <li><a href="#" class="category-link active">Outdoor Swing</a></li>
+                        <li><a href="#" class="category-link">Single Seater Swing</a></li>
+                        <li><a href="#" class="category-link">Single Swing</a></li>
+                        <li><a href="#" class="category-link">Stainless Steel Swing</a></li>
+                        <li><a href="#" class="category-link">Swing with Stand</a></li>
+                        <li><a href="#" class="category-link">Wicker Swing</a></li>
+                        <li><a href="#" class="category-link">Wooden Swing</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="products-main">
+                    <!-- Products Header -->
+                    <div class="products-header">
+                        <div class="view-options">
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                            <button class="view-btn" data-view="grid-2">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                            <button class="view-btn active" data-view="grid-3">
+                                <i class="fas fa-th"></i>
+                            </button>
+                        </div>
+                        <div class="sort-options">
+                            <select class="sort-select">
+                                <option value="default">Default sorting</option>
+                                <option value="name">Sort by name</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest first</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                        <!-- Product Card 1 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="product-item">
+                            <div class="product-image-wrapper">
+                                <img src="assets/jc_ourCategory.jpg" alt="Machhli Teak Wood Name 2"
+                                    class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">MACHHLI TEAK WOOD<br>NAME 2</h3>
+                                <button class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Buy via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="pagination-link prev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </a>
+                        <div class="pagination-numbers">
+                            <a href="#" class="pagination-number active">1</a>
+                            <a href="#" class="pagination-number">2</a>
+                            <a href="#" class="pagination-number">3</a>
+                            <span class="pagination-dots">...</span>
+                            <a href="#" class="pagination-number">8</a>
+                            <a href="#" class="pagination-number">9</a>
+                            <a href="#" class="pagination-number">10</a>
+                        </div>
+                        <a href="#" class="pagination-link next">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <!-- Top Footer Section -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-logo-section">
+                        <div class="footer-logo">
+                            <img src="assets/jhulacraftLogo.png" alt="JhulaCraft" class="footer-logo-image">
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter-section">
+                        <div class="newsletter-form">
+                            <input type="tel" placeholder="Your Phone Number" class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">Send</button>
+                        </div>
+                    </div>
+
+                    <div class="footer-social-section">
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content stagger-container">
+                    <div class="footer-section footer-about animate-stagger">
+                        <h3 class="footer-title">Why People Like Us</h3>
+                        <p class="footer-description">
+                            At JhulaCraft, we're dedicated to creating beautiful, handcrafted home decor pieces that
+                            bring warmth and character to your living spaces. Our team of skilled artisans is here to
+                            guide you through every step of your home decoration journey.
+                        </p>
+                        <a href="#" class="footer-cta-btn">Order Now</a>
+                    </div>
+
+                    <div class="footer-section animate-stagger">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#shop">Shop</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="#franchise">Franchise</a></li>
+                            <li><a href="#branches">Our Branches</a></li>
+                            <li><a href="index.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section animate-stagger">
+                        <h3 class="footer-title">Our Products</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Acrylic swing</a></li>
+                            <li><a href="#">Stainless steel swing</a></li>
+                            <li><a href="#">Wicker Swing</a></li>
+                            <li><a href="#">Wooden Swing</a></li>
+                            <li><a href="#">Outdoor Swing</a></li>
+                            <li><a href="#">Swing with stand</a></li>
+                            <li><a href="#">Carving swing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section footer-contact animate-stagger">
+                        <h3 class="footer-title">Contact Us</h3>
+
+                        <div class="contact-group">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Location</h4>
+                                <p class="contact-text">Hyderabad, Telangana, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-group">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Mail</h4>
+                                <p class="contact-text">jhulacraft@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-group">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Phone</h4>
+                                <p class="contact-text">+91 9157643543</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-copyright">&copy; 2025 JhulaCraft | Designed with ❤️ for beautiful homes</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
